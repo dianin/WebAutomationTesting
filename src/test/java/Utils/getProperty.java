@@ -1,6 +1,6 @@
 package Utils;
 
-public class getProperty {
+public class GetProperty {
 
 
 

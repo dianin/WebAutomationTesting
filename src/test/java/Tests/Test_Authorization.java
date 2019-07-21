@@ -22,7 +22,7 @@ public class Test_Authorization {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://github.com");
+        driver.get("https://github.com/login");
         mainNoAuthorizedPage = new MainNoAuthorizedPage(driver);
 
     }
