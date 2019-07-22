@@ -2,10 +2,7 @@ package Utils;
 
 import com.google.common.base.Function;
 import com.google.common.util.concurrent.FluentFuture;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,8 +26,9 @@ public class WaitHandler {
         longWait = new WebDriverWait(driver, 40);
     }
 
-    public void waitShortAndClick (By selector) {
-       if (isPresent(selector))
+    public void shotWaitAndClick (By selector)
+    {
+        shortWait.until(ExpectedConditions.elementToBeClickable(selector));
         driver.findElement(selector).click();
     }
 
@@ -48,6 +46,13 @@ public class WaitHandler {
         }
         return driver.findElements(selector);
     }
+
+    public void clearThenInput (By selector, String text)
+    {
+        driver.findElement(selector).clear();
+        driver.findElement(selector).sendKeys(text);
+    }
+
 
 
     private enum ElementStatus{
@@ -86,8 +91,10 @@ public class WaitHandler {
     }
 
     public void input (By selector, String textToInput) {
-        if (isElementPresent(selector))  driver.findElement(selector).sendKeys(textToInput);
-               else System.out.println("no present element");
+        shortWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(selector));
+        driver.findElement(selector).click();
+        driver.findElement(selector).sendKeys(textToInput);
+
     }
 
     public boolean isPresent (By selector)
@@ -111,5 +118,20 @@ public class WaitHandler {
   /*  waitForElement(By.id(""), ExpectedConditions::presenceOfElementLocated, 0);
     waitForElement(By.xpath(""), ExpectedConditions::visibilityOfElementLocated, null);
     waitForElement(By.cssSelector(""), ExpectedConditions::elementToBeClickable, 15);*/
+
+     public void shortWaitForLoad (By selector) {
+         shortWait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(selector));
+     }
+
+     public void scrollDownUntillVisibleElement (By selector) {
+         JavascriptExecutor js = (JavascriptExecutor) driver;
+         js.executeScript("arguments[0].scrollIntoView(true);", selector);
+     }
+
+     public String getText (By selector)
+     {
+         return driver.findElement(selector).getText();
+     }
+
 
 }

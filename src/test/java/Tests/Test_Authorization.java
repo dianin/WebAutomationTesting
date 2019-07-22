@@ -1,12 +1,16 @@
 package Tests;
 
 import Pages.MainNoAuthorizedPage;
+import Utils.WaitHandler;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import static Utils.getProperty.getConfigProperty;
 
 public class Test_Authorization {
 
@@ -15,6 +19,10 @@ public class Test_Authorization {
     private MainNoAuthorizedPage mainNoAuthorizedPage;
 
 
+    public Test_Authorization(MainNoAuthorizedPage mainNoAuthorizedPage) {
+        WaitHandler waitHandler = new WaitHandler(driver);
+        MainNoAuthorizedPage mainNoAuthorizedPage1 = new MainNoAuthorizedPage(driver);
+    }
 
     @BeforeTest
     public void SetUp ()
@@ -27,18 +35,21 @@ public class Test_Authorization {
 
     }
 
-
-
-
-    @Test
-    public synchronized void LogIn () throws InterruptedException {
-        mainNoAuthorizedPage.correctFillLoginForm();
-    }
-
     @Test
     public void LogInWithNegativeCases ()
     {
+        mainNoAuthorizedPage.enterInvalidData();
+        mainNoAuthorizedPage.signIn();
+        Assert.assertEquals(getConfigProperty("warningMessageSignIn"),
+                waitHandler.getText(warningIncorectPass) );
 
+
+    }
+
+    @Test
+    public synchronized void LogInValidData ()  {
+        mainNoAuthorizedPage.enterValidData();
+        mainNoAuthorizedPage.signIn();
     }
 
     @AfterTest
