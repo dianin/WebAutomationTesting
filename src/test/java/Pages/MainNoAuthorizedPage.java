@@ -34,20 +34,40 @@ public class MainNoAuthorizedPage {
 
 
 
-    public synchronized void  enterValidData ()
+    public synchronized void authorizedViaEmail()
     {
         waitHandler.input(loginForm, getConfigProperty("firstAccountEmail"));
         waitHandler.input(passwordForm,"firstAccountPass");
     }
 
-    public synchronized void enterInvalidData ()
+    public synchronized void authorizedVidUserName ()
+    {
+        waitHandler.input(loginForm, getConfigProperty("firstAccountUserName"));
+        waitHandler.input(passwordForm,"firstAccountPass");
+    }
+
+    public synchronized void enterInvalidDataPass()
     {
         waitHandler.input(loginForm, getConfigProperty("firstAccountEmail"));
         waitHandler.input(passwordForm, getConfigProperty("invalidPassword"));
+    }
+
+    public synchronized void enterInvalidDataEmail ()
+    {
+        waitHandler.input(loginForm, getConfigProperty("invalidEmail"));
+        waitHandler.input(passwordForm,"firstAccountPass");
+    }
+
+    public synchronized void checkForWarningError ()
+    {
+        Assert.assertEquals(getConfigProperty("warningMessageSignIn"),
+                waitHandler.getText(warningIncorectPass) );
     }
 
     public synchronized void signIn ()
     {
         waitHandler.shotWaitAndClick(signInButton);
     }
+
+
 }

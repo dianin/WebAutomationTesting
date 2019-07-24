@@ -1,16 +1,12 @@
 package Tests;
 
 import Pages.MainNoAuthorizedPage;
-import Utils.WaitHandler;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import static Utils.getProperty.getConfigProperty;
 
 public class Test_Authorization {
 
@@ -19,10 +15,6 @@ public class Test_Authorization {
     private MainNoAuthorizedPage mainNoAuthorizedPage;
 
 
-    public Test_Authorization(MainNoAuthorizedPage mainNoAuthorizedPage) {
-        WaitHandler waitHandler = new WaitHandler(driver);
-        MainNoAuthorizedPage mainNoAuthorizedPage1 = new MainNoAuthorizedPage(driver);
-    }
 
     @BeforeTest
     public void SetUp ()
@@ -36,19 +28,31 @@ public class Test_Authorization {
     }
 
     @Test
-    public void LogInWithNegativeCases ()
+    public void LogInWithNegativeCasesPass ()
     {
-        mainNoAuthorizedPage.enterInvalidData();
+        mainNoAuthorizedPage.enterInvalidDataPass();
         mainNoAuthorizedPage.signIn();
-        Assert.assertEquals(getConfigProperty("warningMessageSignIn"),
-                waitHandler.getText(warningIncorectPass) );
-
-
+        mainNoAuthorizedPage.checkForWarningError();
     }
 
     @Test
-    public synchronized void LogInValidData ()  {
-        mainNoAuthorizedPage.enterValidData();
+    public void LogInWithNegativeCasesEmail ()
+    {
+        mainNoAuthorizedPage.enterInvalidDataEmail();
+        mainNoAuthorizedPage.signIn();
+        mainNoAuthorizedPage.checkForWarningError();
+    }
+
+    @Test
+    public synchronized void LogInValidDataViaEmail ()  {
+        mainNoAuthorizedPage.authorizedViaEmail();
+        mainNoAuthorizedPage.signIn();
+    }
+
+    @Test
+    public synchronized void LogInValidDataViaUserName ()
+    {
+        mainNoAuthorizedPage.authorizedVidUserName();
         mainNoAuthorizedPage.signIn();
     }
 

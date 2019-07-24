@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
-import static sun.plugin2.message.HeartbeatMessage.DEFAULT_TIMEOUT;
+//import static sun.plugin2.message.HeartbeatMessage.DEFAULT_TIMEOUT;
 
 public class WaitHandler {
 
@@ -103,18 +103,18 @@ public class WaitHandler {
         return true;
     }
 
-    public WebElement waitForElement(final By locator, final Function<By, ExpectedCondition<WebElement>> condition, final Integer timeout) {
-
-        final WebElement element = shortWait.withTimeout(
-                Optional.ofNullable(timeout)
-                        .filter(value -> value >= 0)
-                        .orElse((int) DEFAULT_TIMEOUT), TimeUnit.SECONDS)
-                .until(condition.apply(locator));
-
-        shortWait.withTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
-
-        return element;
-    }
+//    public WebElement waitForElement(final By locator, final Function<By, ExpectedCondition<WebElement>> condition, final Integer timeout) {
+//
+//        final WebElement element = shortWait.withTimeout(
+//                Optional.ofNullable(timeout)
+//                        .filter(value -> value >= 0)
+//                        .orElse((int) DEFAULT_TIMEOUT), TimeUnit.SECONDS)
+//                .until(condition.apply(locator));
+//
+//        shortWait.withTimeout(DEFAULT_TIMEOUT, TimeUnit.SECONDS);
+//
+//        return element;
+//    }
   /*  waitForElement(By.id(""), ExpectedConditions::presenceOfElementLocated, 0);
     waitForElement(By.xpath(""), ExpectedConditions::visibilityOfElementLocated, null);
     waitForElement(By.cssSelector(""), ExpectedConditions::elementToBeClickable, 15);*/
