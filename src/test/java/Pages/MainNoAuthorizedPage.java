@@ -37,13 +37,13 @@ public class MainNoAuthorizedPage {
     public synchronized void authorizedViaEmail()
     {
         waitHandler.input(loginForm, getConfigProperty("firstAccountEmail"));
-        waitHandler.input(passwordForm,"firstAccountPass");
+        waitHandler.input(passwordForm,getConfigProperty("firstAccountPass"));
     }
 
     public synchronized void authorizedVidUserName ()
     {
         waitHandler.input(loginForm, getConfigProperty("firstAccountUserName"));
-        waitHandler.input(passwordForm,"firstAccountPass");
+        waitHandler.input(passwordForm,getConfigProperty("firstAccountPass"));
     }
 
     public synchronized void enterInvalidDataPass()
@@ -64,9 +64,10 @@ public class MainNoAuthorizedPage {
                 waitHandler.getText(warningIncorectPass) );
     }
 
-    public synchronized void signIn ()
+    public synchronized MainPage signIn ()
     {
         waitHandler.shotWaitAndClick(signInButton);
+        return new MainPage(webDriver);
     }
 
 

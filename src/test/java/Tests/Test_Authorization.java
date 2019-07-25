@@ -1,29 +1,31 @@
 package Tests;
 
 import Pages.MainNoAuthorizedPage;
+import Pages.MainPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class Test_Authorization {
 
     //private WebDriverManager webDriverManager;
-    private WebDriver driver;
+    private WebDriver webDriver;
     private MainNoAuthorizedPage mainNoAuthorizedPage;
+    private MainPage mainPage;
 
 
 
-    @BeforeTest
+    @BeforeMethod
     public void SetUp ()
     {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://github.com/login");
-        mainNoAuthorizedPage = new MainNoAuthorizedPage(driver);
+        webDriver = new ChromeDriver();
+        webDriver.manage().window().maximize();
+        webDriver.manage().deleteAllCookies();
+        webDriver.get("https://github.com/login");
+        mainNoAuthorizedPage = new MainNoAuthorizedPage(webDriver);
+        mainPage = new MainPage(webDriver);
 
     }
 
@@ -43,10 +45,12 @@ public class Test_Authorization {
         mainNoAuthorizedPage.checkForWarningError();
     }
 
+
     @Test
     public synchronized void LogInValidDataViaEmail ()  {
         mainNoAuthorizedPage.authorizedViaEmail();
         mainNoAuthorizedPage.signIn();
+        mainPage.verifyPage();
     }
 
     @Test
@@ -54,13 +58,15 @@ public class Test_Authorization {
     {
         mainNoAuthorizedPage.authorizedVidUserName();
         mainNoAuthorizedPage.signIn();
+        mainPage.verifyPage();
     }
 
-    @AfterTest
+
+    @AfterMethod
     public synchronized void GetDown ()
     {
-        driver.quit();
-        driver = null;
+        webDriver.quit();
+        webDriver = null;
 
     }
 }
