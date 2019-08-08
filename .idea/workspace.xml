@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ab6b3c4-6ea6-4e30-8375-6eeedcaabc67" name="Default" comment="build framework">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Utils/ScreenshotListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/MainNoAuthorizedPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/MainNoAuthorizedPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Tests/Test_Authorization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tests/Test_Authorization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Utils/WaitHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Utils/WaitHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,47 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Utils/WaitHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="106" column="2" lean-forward="true" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4273#4274#0" expanded="true" />
-                <element signature="e#4336#4337#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MainNoAuthorizedPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="42" column="50" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="50" />
-              <folding>
-                <element signature="e#1471#1472#0" expanded="true" />
-                <element signature="e#1529#1530#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Test_Authorization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="336">
+              <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/list.xsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -70,35 +40,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Utils/TestListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
+            <state relative-caret-position="84">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Utils/ScreenshotListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+            <state relative-caret-position="205">
+              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Utils/RetryAnalizer.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MainPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Utils/getProperty.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="114">
+              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,6 +75,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="XSLT Stylesheet" />
         <option value="Class" />
       </list>
     </option>
@@ -128,9 +93,12 @@
         <option value="$PROJECT_DIR$/src/test/java/Utils/getProperty.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Utils/WaitHandler.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Pages/MainNoAuthorizedPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Tests/Test_Authorization.java" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/MainNoAuthorizedPage.java" />
+        <option value="$PROJECT_DIR$/src/list.xsl" />
+        <option value="$PROJECT_DIR$/src/test/java/Pages/MainPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Utils/ScreenshotListener.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Tests/Test_Authorization.java" />
       </list>
     </option>
   </component>
@@ -164,17 +132,16 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="x" value="499" />
+    <option name="y" value="84" />
+    <option name="width" value="1535" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,14 +204,12 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="home" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -252,12 +217,17 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GIT/QA/ST_Appium_Android" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\home" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -287,6 +257,30 @@
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/igor.dianin/.IdeaIC2019.1/system/temp-testng-customsuite.xml" type="TestNG" nameIsGenerated="true">
+      <module name="WebTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$USER_HOME$/.IdeaIC2019.1/system/temp-testng-customsuite.xml" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -328,6 +322,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test_Authorization.LogInValidDataViaEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WebTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Authorization" />
+      <option name="METHOD_NAME" value="LogInValidDataViaEmail" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test_Authorization.LogInWithNegativeCases" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WebTesting" />
       <extension name="coverage">
@@ -339,6 +352,25 @@
       <option name="PACKAGE_NAME" value="Tests" />
       <option name="MAIN_CLASS_NAME" value="Tests.Test_Authorization" />
       <option name="METHOD_NAME" value="LogInWithNegativeCases" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test_Authorization.LogInWithNegativeCasesPass" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WebTesting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Tests" />
+      <option name="MAIN_CLASS_NAME" value="Tests.Test_Authorization" />
+      <option name="METHOD_NAME" value="LogInWithNegativeCasesPass" />
       <option name="TEST_OBJECT" value="METHOD" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <properties />
@@ -368,6 +400,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.Test_Authorization" />
+        <item itemvalue="TestNG.Test_Authorization.LogInWithNegativeCasesPass" />
+        <item itemvalue="TestNG.Test_Authorization.LogInValidDataViaEmail" />
         <item itemvalue="TestNG.Test_Authorization.LogInWithNegativeCases" />
         <item itemvalue="TestNG.Test_Authorization.LogInValidData" />
       </list>
@@ -386,37 +420,52 @@
       <workItem from="1562496043414" duration="12902000" />
       <workItem from="1562527397141" duration="125000" />
     </task>
+    <task id="LOCAL-00001" summary="build framework">
+      <created>1563990179303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1563990179303</updated>
+    </task>
+    <task id="LOCAL-00002" summary="build framework">
+      <created>1564076199312</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564076199312</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_Authorization_LogInWithNegativeCases - 2019.07.23 at 19h 52m 48s.xml">
-      <configuration name="Test_Authorization.LogInWithNegativeCases" configurationId="TestNG" />
+    <history-entry file="Test_Authorization_LogInValidDataViaEmail - 2019.07.25 at 20h 11m 09s.xml">
+      <configuration name="Test_Authorization.LogInValidDataViaEmail" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Test_Authorization_LogInValidData - 2019.07.23 at 19h 54m 08s.xml">
-      <configuration name="Test_Authorization.LogInValidData" configurationId="TestNG" />
+    <history-entry file="Test_Authorization_LogInValidDataViaEmail - 2019.07.25 at 20h 11m 29s.xml">
+      <configuration name="Test_Authorization.LogInValidDataViaEmail" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Test_Authorization - 2019.07.23 at 19h 55m 45s.xml">
+    <history-entry file="Test_Authorization_LogInValidDataViaEmail - 2019.07.25 at 20h 12m 26s.xml">
+      <configuration name="Test_Authorization.LogInValidDataViaEmail" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test_Authorization - 2019.07.25 at 20h 13m 03s.xml">
       <configuration name="Test_Authorization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Test_Authorization_LogInWithNegativeCases - 2019.07.23 at 19h 57m 17s.xml">
-      <configuration name="Test_Authorization.LogInWithNegativeCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test_Authorization_LogInWithNegativeCases - 2019.07.23 at 19h 57m 36s.xml">
-      <configuration name="Test_Authorization.LogInWithNegativeCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test_Authorization_LogInWithNegativeCases - 2019.07.23 at 19h 59m 21s.xml">
-      <configuration name="Test_Authorization.LogInWithNegativeCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test_Authorization_LogInWithNegativeCases - 2019.07.24 at 20h 21m 26s.xml">
-      <configuration name="Test_Authorization.LogInWithNegativeCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test_Authorization_LogInWithNegativeCases - 2019.07.24 at 20h 22m 59s.xml">
-      <configuration name="Test_Authorization.LogInWithNegativeCases" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="Test_Authorization - 2019.07.24 at 20h 28m 21s.xml">
+    <history-entry file="Test_Authorization - 2019.07.25 at 20h 13m 28s.xml">
       <configuration name="Test_Authorization" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="Test_Authorization - 2019.07.24 at 20h 37m 27s.xml">
+    <history-entry file="Test_Authorization - 2019.07.25 at 20h 14m 19s.xml">
+      <configuration name="Test_Authorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test_Authorization_LogInWithNegativeCasesPass - 2019.07.25 at 20h 17m 39s.xml">
+      <configuration name="Test_Authorization.LogInWithNegativeCasesPass" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test_Authorization - 2019.07.25 at 20h 20m 15s.xml">
+      <configuration name="Test_Authorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test_Authorization - 2019.07.25 at 20h 21m 15s.xml">
+      <configuration name="Test_Authorization" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test_Authorization - 2019.08.08 at 18h 28m 26s.xml">
       <configuration name="Test_Authorization" configurationId="TestNG" />
     </history-entry>
   </component>
@@ -424,10 +473,10 @@
     <option name="totallyTimeSpent" value="13027000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27452025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -436,15 +485,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.6876333" visible="true" weight="0.41170096" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4989339" weight="0.39761648" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6865672" visible="true" weight="0.41495124" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49840087" weight="0.39761648" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.31236672" side_tool="true" visible="true" weight="0.41170096" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.31343284" side_tool="true" weight="0.41170096" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4968017" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49626866" weight="0.32827735" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24946696" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -454,7 +503,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Maven" order="9" visible="true" weight="0.16791044" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.34463894" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -538,16 +587,6 @@
         <state relative-caret-position="-78" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/getProperty.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1197" />
@@ -561,13 +600,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/RetryAnalizer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -585,59 +617,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
+        <state relative-caret-position="840">
           <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/getProperty.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.IdeaIC2019.1/system/temp-testng-customsuite.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="58" lean-forward="true" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/TestListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/WaitHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="106" column="2" lean-forward="true" selection-start-line="106" selection-start-column="2" selection-end-line="106" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4273#4274#0" expanded="true" />
-            <element signature="e#4336#4337#0" expanded="true" />
-          </folding>
+        <state>
+          <caret selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MainNoAuthorizedPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="42" column="50" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="50" />
+        <state relative-caret-position="630">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/WaitHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding>
-            <element signature="e#1471#1472#0" expanded="true" />
-            <element signature="e#1529#1530#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4299#4300#0" expanded="true" />
+            <element signature="e#4362#4363#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/RetryAnalizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/list.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/TestListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/IClass.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Pages/MainPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/ITestResult.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="49" column="17" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Utils/ScreenshotListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Tests/Test_Authorization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/config.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" lean-forward="true" selection-start-column="18" selection-end-column="40" />
+        <state relative-caret-position="336">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
         </state>
       </provider>
     </entry>

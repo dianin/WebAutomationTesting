@@ -6,6 +6,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
+import sun.tracing.dtrace.DTraceProviderFactory;
 
 public class Test_Authorization {
 
@@ -13,7 +14,6 @@ public class Test_Authorization {
     private WebDriver webDriver;
     private MainNoAuthorizedPage mainNoAuthorizedPage;
     private MainPage mainPage;
-
 
 
     @BeforeMethod
