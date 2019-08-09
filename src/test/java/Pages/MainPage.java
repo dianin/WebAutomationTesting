@@ -9,7 +9,7 @@ import static Utils.getProperty.getConfigProperty;
 
 public class MainPage {
 
-    private WebDriver webDriver;
+    private WebDriver driver;
 
     private WaitHandler waitHandler;
 
@@ -18,9 +18,9 @@ public class MainPage {
     //private By userNameFromDropDown = By.xpath("//*[@role='menuitem']//*[@class='css-truncate-target']");
 
 
-    public MainPage(WebDriver webDriver) {
-        this.webDriver = webDriver;
-        waitHandler = new WaitHandler(webDriver);
+    public MainPage(WebDriver driver) {
+        this.driver = driver;
+        waitHandler = new WaitHandler(driver);
 
     }
 

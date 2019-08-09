@@ -2,30 +2,36 @@ package Tests;
 
 import Pages.MainNoAuthorizedPage;
 import Pages.MainPage;
+import Utils.ScreenshotListener;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
-import sun.tracing.dtrace.DTraceProviderFactory;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+
+@Listeners(ScreenshotListener.class)
 public class Test_Authorization {
 
     //private WebDriverManager webDriverManager;
-    private WebDriver webDriver;
+    private WebDriver driver;
     private MainNoAuthorizedPage mainNoAuthorizedPage;
     private MainPage mainPage;
 
 
     @BeforeMethod
-    public void SetUp ()
+    public void SetUp (ITestContext context)
     {
         WebDriverManager.chromedriver().setup();
-        webDriver = new ChromeDriver();
-        webDriver.manage().window().maximize();
-        webDriver.manage().deleteAllCookies();
-        webDriver.get("https://github.com/login");
-        mainNoAuthorizedPage = new MainNoAuthorizedPage(webDriver);
-        mainPage = new MainPage(webDriver);
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().deleteAllCookies();
+        driver.get("https://github.com/login");
+        mainNoAuthorizedPage = new MainNoAuthorizedPage(driver);
+        mainPage = new MainPage(driver);
+        context.setAttribute("driver", driver);
 
     }
 
@@ -65,8 +71,8 @@ public class Test_Authorization {
     @AfterMethod
     public synchronized void GetDown ()
     {
-        webDriver.quit();
-        webDriver = null;
+        driver.quit();
+        driver = null;
 
     }
 }

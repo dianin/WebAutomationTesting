@@ -1,11 +1,8 @@
 package Pages;
 
 import Utils.WaitHandler;
-import org.omg.CORBA.TIMEOUT;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
@@ -13,13 +10,13 @@ import static Utils.getProperty.getConfigProperty;
 
 public class MainNoAuthorizedPage {
 
-    private WebDriver webDriver;
+    private WebDriver driver;
     private WaitHandler waitHandler;
 
-    public MainNoAuthorizedPage(WebDriver webDriver) {
-        this.webDriver = webDriver;
-        waitHandler = new WaitHandler(webDriver);
-        PageFactory.initElements(webDriver, this);
+    public MainNoAuthorizedPage(WebDriver driver) {
+        this.driver = driver;
+        waitHandler = new WaitHandler(driver);
+        PageFactory.initElements(driver, this);
 
     }
 
@@ -67,7 +64,7 @@ public class MainNoAuthorizedPage {
     public synchronized MainPage signIn ()
     {
         waitHandler.shotWaitAndClick(signInButton);
-        return new MainPage(webDriver);
+        return new MainPage(driver);
     }
 
 
