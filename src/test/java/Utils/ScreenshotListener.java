@@ -60,7 +60,7 @@ public class ScreenshotListener extends TestListenerAdapter {
 
             String screenshotDirectory = System.setProperty("screenshotDirectory", "target/screenshots");
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH.mm.ss");
-            String screenshotAbsolutePath = screenshotDirectory + File.separator + formatter.format(System.currentTimeMillis())
+            String screenshotAbsolutePath = System.getProperty("screenshotDirectory") + File.separator + formatter.format(System.currentTimeMillis())
                     + "_" + iTestResult.getMethod().getMethodName() + ".png";
             File screenshot = new File(screenshotAbsolutePath);
             if (createFile(screenshot)) {
